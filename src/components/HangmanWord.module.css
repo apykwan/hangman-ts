@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    gap: .25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;   
+}
+
+.guess {
+    border-bottom: .1em solid black;
+}
+
+.guess-wrong {
+    visibility: hidden;
+}
+
+.guess-right {
+    visibility: visible;
+}

@@ -1,0 +1,96 @@
+.hang {
+    position: relative;
+}
+
+.hang-pole {
+    height: 400px;
+    width: 10px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.hang-reach {
+    height: 10px;
+    width: 200px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.hang-rope {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 10px;
+    background-color: black;
+}
+
+.hang-stand {
+    height: 10px;
+    width: 250px;
+    background-color: black;
+}
+
+.man-head {
+    position: absolute;
+    top: 50px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+}
+
+.man-body {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 10px;
+    height: 100px;
+    background-color: black;
+}
+
+.man-arm__right {
+    position: absolute;
+    top: 130px;
+    right: -100px;
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    rotate: -30deg;
+    transform-origin: "left bottom";
+}
+
+.man-arm__left {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    rotate: 30deg;
+    transform-origin: "right bottom";
+}
+
+
+.man-leg__right {
+    position: absolute;
+    top: 255px;
+    right: -90px;
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    rotate: 50deg;
+    transform-origin: "left bottom";
+}
+
+.man-leg__left {
+    position: absolute;
+    top: 255px;
+    right: 0;
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    rotate: -50deg;
+    transform-origin: "right bottom";
+}
