@@ -3,9 +3,10 @@ import style from './HangmanWord.module.css';
 type HangmanWordProps = {
     guessedLetters: string[];
     wordToGuess: string;
+    reveal?: boolean;
 }
 
-const HangmanWord = ({ guessedLetters, wordToGuess} : HangmanWordProps) => {
+const HangmanWord = ({ guessedLetters, wordToGuess, reveal = false } : HangmanWordProps) => {
     return (
       <div className={style.container}>
         {wordToGuess.split("").map((letter, index) => (
@@ -14,7 +15,8 @@ const HangmanWord = ({ guessedLetters, wordToGuess} : HangmanWordProps) => {
                 key={letter+index}
             >
                 <span 
-                    className={guessedLetters.includes(letter) ? style["guess-right"] : style["guess-wrong"]}
+                    className={guessedLetters.includes(letter) || reveal ? style["guess-right"] : style["guess-wrong"]}
+                    style={{ color: !guessedLetters.includes(letter) && reveal ? "red" : "black" }}
                 >
                     {letter}
                 </span>
